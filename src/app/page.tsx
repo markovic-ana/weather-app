@@ -110,7 +110,6 @@ export default function Home() {
                       padding: 16px 8px;
                       padding-right: 12px;
                       min-height: unset;
-                      min-width: 200px;
                       background: transparent;
                       max-width: 90%;
                       font-size: 16px;
