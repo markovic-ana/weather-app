@@ -3,23 +3,17 @@
 const PALETTE = {
   primary: "#FF6C44",
   secondary: "#FFD633",
-  tertiary: "#FF6C44",
-  text: "#000000",
-  background: "#FFFFFF",
   white: "#FFFFFF",
   black: "#000000",
   grey: "#F4F4F4",
   greyDark: "#E0E0E0",
   greyLight: "#F9F9F9",
-  error: "#FF0000",
-  success: "#00FF00",
-  warning: "#FFD633",
-  info: "#00FFFF",
   disabled: "#E0E0E0",
   transparent: "transparent",
   overlay: "rgba(0, 0, 0, 0.5)",
   overlayLight: "rgba(0, 0, 0, 0.1)",
   overlayDark: "rgba(0, 0, 0, 0.9)",
+  accent: "#9e9c9c6e",
 };
 
 const FONT_SIZE = {
