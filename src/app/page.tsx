@@ -151,7 +151,7 @@ export default function Home() {
                       color: ${THEME.palette.white};
                     `}
                   >
-                    {weather.main?.temp}°
+                    {weather.main?.temp.toFixed()}°
                   </span>{" "}
                   in{" "}
                   <span
@@ -167,7 +167,7 @@ export default function Home() {
                       color: ${THEME.palette.white};
                     `}
                   >
-                    {weather.main?.feels_like}°
+                    {weather.main?.feels_like.toFixed()}°
                   </span>
                   . Expect{" "}
                   <span
