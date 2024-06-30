@@ -10,6 +10,7 @@ import { Text } from "@/components/Text";
 import axios from "axios";
 import { capitilizeFirstLetter } from "@/utils/stringTransform";
 import { ErrorMessage } from "@/components/ErrorMessage";
+import { transformKelvinToCelsius } from "@/utils/transformKtoC";
 
 export default function Home() {
   const [step, setStep] = useState(1);
@@ -151,7 +152,7 @@ export default function Home() {
                       color: ${THEME.palette.white};
                     `}
                   >
-                    {weather.main?.temp.toFixed()}°
+                    {transformKelvinToCelsius(weather.main?.temp).toFixed()}°
                   </span>{" "}
                   in{" "}
                   <span
@@ -167,7 +168,10 @@ export default function Home() {
                       color: ${THEME.palette.white};
                     `}
                   >
-                    {weather.main?.feels_like.toFixed()}°
+                    {transformKelvinToCelsius(
+                      weather.main?.feels_like
+                    ).toFixed()}
+                    °
                   </span>
                   . Expect{" "}
                   <span
